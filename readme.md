@@ -21,7 +21,9 @@ In the near future, there may be more options. I'm planning stuff yet.
 
 ## How Do I install it?
 
-Git clone (or download as a zip) this repository. Then just execute the install.sh script (no root privileges required) that comes with the package. After that, you're good to go, start writing .virtualrc in all your projects.
+> curl https://raw.github.com/netcriptus/virtualmanager/master/install.sh | bash
+
+After that, you're good to go, start writing .virtualrc in all your projects.
 
 ### Hey! I ain't gonna execute things I don't know! What does it do?
 
