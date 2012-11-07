@@ -15,7 +15,7 @@ has_virtualenv() {
     fi
 }
 virtual_cd () {
-    cd "$@" && has_virtualenv #>&- 2>&-
+    cd "$@" && has_virtualenv >&- 2>&-
 }
 
 alias cd="virtual_cd"
