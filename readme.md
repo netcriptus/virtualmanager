@@ -45,7 +45,7 @@ Yes, every time you cd, it's also checking the folder for .virtualrc.
 
 Not that I know. If you know an alternative, e-mail me, write it on issues, send me a letter, send me some smoke signal, but please, don't keep it to yourself!
 
-## Know bugs
+## Known bugs
 
 If instead of cd you use pushd and popd, it will not work.
 
