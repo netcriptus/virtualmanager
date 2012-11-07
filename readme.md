@@ -29,6 +29,8 @@ Good boy. Now let's get into the details.
 
 The install.sh will create the folder .virtualmanager in your home folder, where the virtualmanager code will be located. Then it will add one line to your .bashrc or .profile that will source it. Also, it will run source .bashrc (or source .profile) just after installation is complete.
 
+If you use something other than .profile or .bashrc, a .profile will be created in your home. Sorry, still have to improve it.
+
 That's all, I swear. Ok, you could also read the code.
 
 ## Cool. How does it work?
