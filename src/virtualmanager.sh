@@ -1,5 +1,17 @@
-# Virtualenv trick. Make it work like .rvmrc
+manager (){
+    case $1 in
+        "show") 
+            echo -e "Hey, it works!"
+            ;;
+        *)
+            echo -e "I'm sorry, we don't have $1 in the house."
+            ;;
+    esac
+}
 
+
+
+# Virtualenv trick. Make it work like .rvmrc
 has_virtualenv() {
     if [[ -e .virtualrc ]] && [[ ${VIRTUAL_ROOT} != `pwd` ]] ; then
         workon `cat .virtualrc`
@@ -14,8 +26,9 @@ has_virtualenv() {
 		fi
     fi
 }
+
 virtual_cd () {
-    cd "$@" && has_virtualenv >&- 2>&-
+    cd "$@" && has_virtualenv #>&- 2>&-
 }
 
 alias cd="virtual_cd"
